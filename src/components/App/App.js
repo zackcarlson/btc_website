@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import './App.css';
+import Hero from '../Hero/Hero.js';
 
 export default class App extends Component {
   constructor(props) {
@@ -8,7 +10,10 @@ export default class App extends Component {
 
   render() {
     return (
-      <h1>App Component</h1>
+      <div className='app-container'>
+        <h1>App Component</h1>
+        <Hero />
+      </div>
     );
   }
 }
