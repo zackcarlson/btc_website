@@ -1,0 +1,15 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+  color: white;
+}
+
+.navbar-item {
+  list-style: none;
+}
+
+.sign-in-btn {
+  padding: 0 0.5rem;
+}
