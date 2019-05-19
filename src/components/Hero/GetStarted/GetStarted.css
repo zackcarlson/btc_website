@@ -1,0 +1,49 @@
+.getstarted-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 2.5rem;
+}
+
+.getstarted-info-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.getstarted-buy-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.header-root {
+  font-size: 2rem;
+  color: white;
+}
+
+.getStarted-btn {
+  background-color: white;
+  color: #0FB786;
+  padding: 0.5rem;
+  text-transform: uppercase;
+  border-radius: 0.25rem;
+  outline: none;
+  border: none;
+  box-shadow: 0px 2px 4px rgba(100, 100, 100, 0.5);
+}
+
+.getStarted-btn:hover {
+  background-color: rgb(218, 217, 217);
+  color: #0FB786;
+  transition: all 0.3s linear;
+}
+
+.getStarted-p {
+  font-family: Source Sans Pro;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1rem;
+  line-height: 1.8rem;
+  letter-spacing: 0.042rem;
+  color: #D9FCFF;
+}
