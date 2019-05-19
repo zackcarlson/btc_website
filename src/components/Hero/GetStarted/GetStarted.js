@@ -2,6 +2,8 @@ import React from 'react';
 import Button from '../Button/Button.js';
 import Header from '../Header/Header.js';
 import Paragraph from '../Paragraph/Paragraph.js';
+import Buy from '../Buy/Buy.js';
+
 import './GetStarted.css';
 
 const GetStarted = (props) => (
@@ -17,7 +19,7 @@ const GetStarted = (props) => (
       <Button btnText={'Create Account'} btnClass={'getStarted-btn'}/>
     </div>
     <div className='getstarted-buy-container'>
-      Buy Container!
+      <Buy />
     </div>
   </div>
 );
