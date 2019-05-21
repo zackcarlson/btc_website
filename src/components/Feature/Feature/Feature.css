@@ -20,7 +20,6 @@
 }
 
 .feature-btn {
-  margin-bottom: 3rem;
   background: transparent;
   border: none;
   outline: none;
@@ -32,4 +31,21 @@
 #arrow-right {
   color: #24B47E;
   margin-left: .5rem;
+}
+
+#feature-card {
+  border-bottom: 1px solid #F6F9FC;
+  padding: 3rem;
+}
+
+@media screen and (min-width: 992px) {
+  .feature-0, .feature-2 {
+    border-right: 1px solid #F6F9FC;
+  }
+}
+
+@media screen and (max-width: 991px) {
+  #feature-card {
+    border: none;
+  }
 }

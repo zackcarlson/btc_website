@@ -3,7 +3,7 @@ import Feature from './Feature/Feature.js';
 import '../Feature/FeatureContainer.css';
 const FeatureContainer = (props) => (
   <div className='feature-container'>
-    <div className='container'>
+    <div className='container-fluid'>
       <div className='row'>
         { [
             {
@@ -30,7 +30,16 @@ const FeatureContainer = (props) => (
               button: 'Learn More',
               icon: '../../../public/images/question.svg'
             }
-          ].map(info => <Feature headerText={info.header} paragraphText={info.paragraph} btnText={info.button} icon={info.icon}/>)
+          ].map((info, id) => 
+            <Feature
+              headerText={info.header}
+              paragraphText={info.paragraph}
+              btnText={info.button}
+              icon={info.icon} 
+              key={id}
+              uniqId={id}
+            />
+          )
         }
       </div>
     </div>
