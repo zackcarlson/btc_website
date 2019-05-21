@@ -1,0 +1,29 @@
+.feature-header {
+  font-family: 'Source Sans Pro', sans-serif;
+  letter-spacing: 1.55px;
+  color: #24B47E;
+  font-size: 17px;
+  line-height: 22px;
+}
+
+.feature-paragraph {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 26px;
+  letter-spacing: 0.4px;
+  color: #6B7C93;
+}
+
+.feature-btn {
+  margin-bottom: 3rem;
+  background: transparent;
+  border: none;
+  outline: none;
+  padding: 0;
+}
+
+#arrow-right {
+  color: #24B47E;
+}
