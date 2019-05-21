@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Hero from '../Hero/Hero.js';
 import FeatureContainer from '../Feature/FeatureContainer.js';
+import CTABuy from '../CTA_Buy/CTA_Buy.js';
 import Footer from '../Footer/Footer.js';
 
 export default class App extends Component {
@@ -15,6 +16,7 @@ export default class App extends Component {
       <div className='app-container'>
         <Hero />
         <FeatureContainer />
+        <CTABuy />
         <Footer />
       </div>
     );

@@ -1,0 +1,55 @@
+.easy-steps,
+.buy-bitcoin {
+  font-size: 30px;
+  line-height: 38px;
+  letter-spacing: 0.91px;
+} 
+.buy-bitcoin {
+  color: #24B47E;
+}
+
+.easy-steps {
+  color: #32325D;
+}
+
+.cta-buy-container {
+  padding: 4rem;
+  background: #F6F9FC;
+}
+
+.create-logo-btn, .buy-now-btn  {
+  box-shadow: 0px 2px 4px rgba(100, 100, 100, 0.5);
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 0.395294px;
+  border: none;
+  outline: none;
+  margin: .5rem;
+  padding: .5rem 2rem;
+}
+
+.create-logo-btn {
+  background: #24B47E;
+  color: #FFFFFF;
+}
+
+.create-logo-btn:hover {
+  background: rgb(75, 211, 161);
+  color: #FFFFFF;
+  transition: all 0.5s;
+}
+
+.buy-now-btn {
+  background: #FFFFFF;
+  color: #24B47E;
+}
+
+.buy-now-btn:hover {
+  background-color: rgb(218, 217, 217);
+  transition: all 0.3s linear;
+}
+
+#cta-buy-btn-container {
+  text-align: center;
+}
