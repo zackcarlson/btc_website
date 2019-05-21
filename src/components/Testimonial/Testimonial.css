@@ -1,0 +1,23 @@
+.intro-testimonial-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.intro-testimonial-header {
+  font-size: 22px;
+  line-height: 33px;
+  letter-spacing: 2px;
+  color: #24B47E;
+}
+
+.intro-testimonial-paragraph {
+  margin: 2rem;
+}
+
+.intro-testimonial-container-lock-icon,
+.intro-testimonial-header {
+  margin-top: 2rem;
+}

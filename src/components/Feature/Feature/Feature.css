@@ -45,7 +45,7 @@
 }
 
 @media screen and (max-width: 991px) {
-  #feature-card {
-    border: none;
+  .feature-0, .feature-2 {
+    border-right: none;
   }
 }
