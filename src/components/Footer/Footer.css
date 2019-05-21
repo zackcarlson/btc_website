@@ -1,0 +1,28 @@
+.terms-priv-container {
+  list-style: none;
+}
+
+.terms-priv-container > li {
+  margin: .2rem;
+}
+
+#feature-row {
+  text-align: center;
+}
+
+.terms, .privacy {
+  margin: .5rem;
+}
+
+.copyright-text, .terms, .privacy {
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: 0.5px;
+  font-style: normal;
+  font-weight: normal;
+  color: #6B7C93;
+}
+
+.footer-container {
+  padding: 2.5rem;
+}
