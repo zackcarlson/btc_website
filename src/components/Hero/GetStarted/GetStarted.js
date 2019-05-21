@@ -19,7 +19,7 @@ const GetStarted = (props) => (
       <Button btnText={'Create Account'} btnClass={'getStarted-btn'}/>
     </div>
     <div className='getstarted-buy-container'>
-      <Buy range={props.rangeVal} updateRange={props.updateRange}/>
+      <Buy />
     </div>
   </div>
 );

@@ -1,22 +1,36 @@
 import React, { Component } from 'react';
-import './Slider.css';
+import './RangeSlider.css';
 
-class Slider extends Component {
-  constructor(props) {
-    super(props);
-    this.updateRange = this.updateRange.bind(this);
+import Slider from 'react-rangeslider';
+
+class RangeSlider extends Component {
+  constructor (props, context) {
+    super(props, context);
+    this.state = {
+      value: 0.05
+    };
+    this.handleChange = this.handleChange.bind(this);
   }
-  
-  updateRange(e) {
-    this.props.updateRange(e.target.value);
+
+  handleChange(value) {
+    this.setState({
+      value: value
+    });
   }
 
   render() {
-    const { range } = this.props;
+    const { value } = this.state;
     return (
-      <fieldset className='range__field'>
-        <input className='range' type='range' min='0' max='10' value={range} onChange={this.updateRange}/>
-        <div className='timeline-wrapper'>
+      <div className='slider'>
+        <Slider
+          min={0.05}
+          max={1.55}
+          step={0.15}
+          value={value}
+          tooltip={false}
+          onChange={this.handleChange}
+        />
+         <div className='timeline-wrapper'>
           <svg role='presentation' className='tick-container' width='100%' height='8' xmlns='http://www.w3.org/2000/svg'>
             <rect className='range__tick' x='0%' y='3' width='1' height='8'></rect>
             <rect className='range__tick' x='10%' y='3' width='1' height='8'></rect>
@@ -44,9 +58,9 @@ class Slider extends Component {
             <text className='range__point' x='100%' y='14' textAnchor='middle'>1.55</text>
           </svg>
         </div>
-      </fieldset>
+      </div>
     );
   }
 }
 
-export default Slider;
+export default RangeSlider;

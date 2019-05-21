@@ -1,3 +1,31 @@
 .buy-container {
   width: 80%;
 }
+
+.buy-root {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.buy-container-btn {
+  background: #99D979;
+  outline: none;
+  border: none;
+  width: 100%;
+  padding: 1rem;
+  color: white;
+  font-family: 'Source Sans Pro', sans-serif;
+  font-size: 16px;
+}
+
+.buy-container-btn:hover {
+  background: rgb(189, 231, 168);
+  transition: all .5s;
+}
+
+.button-container {
+  width: 100%;
+  margin-top: .5rem;
+}
