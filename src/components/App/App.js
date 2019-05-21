@@ -11,7 +11,6 @@ export default class App extends Component {
   render() {
     return (
       <div className='app-container'>
-        <h1>App Component</h1>
         <Hero />
       </div>
     );

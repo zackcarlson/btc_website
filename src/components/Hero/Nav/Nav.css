@@ -1,4 +1,8 @@
 .navbar {
+  padding-top: .1rem;
+}
+
+.navbar-menu {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -8,6 +12,7 @@
 
 .navbar-item {
   list-style: none;
+  cursor: pointer;
 }
 
 .sign-in-btn {
