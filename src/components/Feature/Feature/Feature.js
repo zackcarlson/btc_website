@@ -6,6 +6,7 @@ import './Feature.css';
 
 const Feature = (props) => (
   <div className='col-sm-6'>
+    <img src={props.icon}/>
     <Header headerText={props.headerText} headerClass={'feature-header'}/>
     <Paragraph
       paragraphText={props.paragraphText}

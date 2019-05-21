@@ -1,5 +1,9 @@
+.feature-header,
+.feature-paragraph {
+  margin-top: 1rem;
+}
+
 .feature-header {
-  font-family: 'Source Sans Pro', sans-serif;
   letter-spacing: 1.55px;
   color: #24B47E;
   font-size: 17px;
@@ -7,7 +11,6 @@
 }
 
 .feature-paragraph {
-  font-family: 'Source Sans Pro', sans-serif;
   font-style: normal;
   font-weight: normal;
   font-size: 17px;
@@ -22,8 +25,11 @@
   border: none;
   outline: none;
   padding: 0;
+  letter-spacing: 0.5px;
+  color: #24B47E;
 }
 
 #arrow-right {
   color: #24B47E;
+  margin-left: .5rem;
 }
