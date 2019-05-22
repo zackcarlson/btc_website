@@ -21,3 +21,10 @@
 .intro-testimonial-header {
   margin-top: 2rem;
 }
+
+.secondary-testimonial-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}

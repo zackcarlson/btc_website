@@ -1,0 +1,33 @@
+.testimony-header {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 17px;
+  line-height: 22px;
+  letter-spacing: 1.1px;
+  color: #24B47E;
+}
+
+.testimony-paragraph {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 26px;
+  letter-spacing: 0.4px;
+  color: #6B7C93;
+}
+
+.testimony-image {
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px #24B47E;
+  margin-right: .8rem;
+}
+
+.testimony-card {
+  box-shadow: 0px 6px 8px rgba(164, 164, 164, 0.213825);
+  border-radius: 3px;
+  padding: 2.6rem;
+  margin: 2rem;
+  max-width: 500px;
+  display: flex;
+  flex-direction: row;
+}
