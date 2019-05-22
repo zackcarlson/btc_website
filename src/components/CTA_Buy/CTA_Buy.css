@@ -32,6 +32,7 @@
 .create-logo-btn {
   background: #24B47E;
   color: #FFFFFF;
+  text-transform: uppercase;
 }
 
 .create-logo-btn:hover {
