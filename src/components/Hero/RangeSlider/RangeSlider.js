@@ -7,7 +7,7 @@ class RangeSlider extends Component {
   constructor (props, context) {
     super(props, context);
     this.state = {
-      value: 0.05
+      value: 0.01
     };
     this.handleChange = this.handleChange.bind(this);
   }
@@ -16,6 +16,7 @@ class RangeSlider extends Component {
     this.setState({
       value: value
     });
+    this.props.onConversion(value);
   }
 
   render() {
@@ -23,9 +24,9 @@ class RangeSlider extends Component {
     return (
       <div className='slider'>
         <Slider
-          min={0.05}
-          max={1.55}
-          step={0.15}
+          min={0.01}
+          max={0.11}
+          step={0.01}
           value={value}
           tooltip={false}
           onChange={this.handleChange}
@@ -45,17 +46,17 @@ class RangeSlider extends Component {
             <rect className='range__tick' x='100%' y='3' width='1' height='8'></rect>
           </svg>
           <svg role='presentation' className='text-container' width='100%' height='14' xmlns='http://www.w3.org/2000/svg'>
-            <text className='range__point' x='0%' y='14' textAnchor='middle'>0.05</text>
-            <text className='range__point' x='10%' y='14' textAnchor='middle'>0.20</text>
-            <text className='range__point' x='20%' y='14' textAnchor='middle'>0.35</text>
-            <text className='range__point' x='30%' y='14' textAnchor='middle'>0.50</text>
-            <text className='range__point' x='40%' y='14' textAnchor='middle'>0.65</text>
-            <text className='range__point' x='50%' y='14' textAnchor='middle'>0.80</text>
-            <text className='range__point' x='60%' y='14' textAnchor='middle'>0.95</text>
-            <text className='range__point' x='70%' y='14' textAnchor='middle'>1.10</text>
-            <text className='range__point' x='80%' y='14' textAnchor='middle'>1.25</text>
-            <text className='range__point' x='90%' y='14' textAnchor='middle'>1.40</text>
-            <text className='range__point' x='100%' y='14' textAnchor='middle'>1.55</text>
+            <text className='range__point' x='0%' y='14' textAnchor='middle'>0.01</text>
+            <text className='range__point' x='10%' y='14' textAnchor='middle'>0.02</text>
+            <text className='range__point' x='20%' y='14' textAnchor='middle'>0.03</text>
+            <text className='range__point' x='30%' y='14' textAnchor='middle'>0.04</text>
+            <text className='range__point' x='40%' y='14' textAnchor='middle'>0.05</text>
+            <text className='range__point' x='50%' y='14' textAnchor='middle'>0.06</text>
+            <text className='range__point' x='60%' y='14' textAnchor='middle'>0.07</text>
+            <text className='range__point' x='70%' y='14' textAnchor='middle'>0.08</text>
+            <text className='range__point' x='80%' y='14' textAnchor='middle'>0.09</text>
+            <text className='range__point' x='90%' y='14' textAnchor='middle'>0.10</text>
+            <text className='range__point' x='100%' y='14' textAnchor='middle'>0.11</text>
           </svg>
         </div>
       </div>
