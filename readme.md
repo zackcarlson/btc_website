@@ -28,6 +28,12 @@ Then start the webpack server:
 npm run start
 ```
 
+And then navigate to the site: 
+
+```
+http://localhost:8080
+```
+
 ## Authors
 
 * **Zack Carlson** - *Excluding Wireframe* - [Github Profile](https://github.com/zackcarlson)
