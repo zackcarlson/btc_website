@@ -22,10 +22,6 @@
   margin-right: .2rem;
 }
 
-.drop-down-list {
-  list-style: none;
-}
-
 .caret-container {
   margin-left: .2rem;
 }
@@ -35,7 +31,10 @@
   text-align: center;
   border: 1px solid rgb(248, 248, 248);
   overflow: auto;
-  height: 60px;
+  height: 45px;
+  list-style: none;
+  position: absolute;
+  width: 6.1rem;
 }
 
 .drop-down-list li + li {

@@ -51,6 +51,15 @@ class Buy extends Component {
 
   handleConversion(bitcoinVal) {
     const { currency } = this.state;
+
+    if (bitcoinVal === 0.060000000000000005) {
+      bitcoinVal = '0.06';
+    } else if (bitcoinVal === 0.06999999999999999) {
+      bitcoinVal = '0.07';
+    } else if (bitcoinVal === 0.09999999999999999) {
+      bitcoinVal = '0.10';
+    }
+
     let currencyVal = btcConversion[currency][bitcoinVal];
     this.setState({
       bitcoinVal,
