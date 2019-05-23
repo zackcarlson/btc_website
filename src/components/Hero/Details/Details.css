@@ -1,0 +1,41 @@
+.grey-dot, .green-dot {
+  border-radius: 50%;
+}
+
+.grey-dot {
+  background-color: #D1D1D1;
+  width: .5rem;
+  height: .5rem;
+}
+
+.green-dot {
+  background-color: #73D07D;
+  width: .75rem;
+  height: .75rem;
+  margin: .3rem;
+}
+
+.three-dots-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.detail-panel-container {
+  font-size: 12px;
+  line-height: 15px;
+  letter-spacing: 0.5px;
+  color: #9B9B9B;
+}
+
+.detail-panel-currency {
+  font-weight: bold;
+  color: black;
+  margin: .2rem;
+}
+
+.details-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

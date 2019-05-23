@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import RangeSlider from '../RangeSlider/RangeSlider.js';
 import Button from '../Button/Button.js';
 import Conversion from '../Conversion/Conversion.js';
+import Details from '../Details/Details.js';
 import { btcConversion } from '../../../helpers/btcConversion.js';
 import './Buy.css';
 
@@ -74,12 +75,13 @@ class Buy extends Component {
   }
 
   render() {
-    const { currencyVal, bitcoinVal } = this.state;
+    const { currencyVal, bitcoinVal, currency } = this.state;
     return (
       <span className='buy-container'>
         <div className='buy-root'>
           <RangeSlider onConversion={this.handleConversion}/>
           <Conversion onCurrencyChange={this.handleCurrency} amount={currencyVal} list={this.state.currencies} title={'USD'} icon={'flag-icon flag-icon-us'}/>
+          <Details currencyVal={currencyVal} currency={currency} bitcoinVal={bitcoinVal}/>
           <Conversion amount={bitcoinVal} list={this.state.bitCurrency} title={'BTC'} btcIcon={this.state.bitCurrency[0].btcIcon}/>
           <Button btnClass={'buy-container-btn'} btnText={'Continue'}/>
         </div>
