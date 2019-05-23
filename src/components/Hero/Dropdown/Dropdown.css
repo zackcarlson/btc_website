@@ -29,9 +29,8 @@
 .drop-down-list {
   padding: 0;
   text-align: center;
-  border: 1px solid rgb(248, 248, 248);
   overflow: auto;
-  height: 2.8125rem;
+  height: 5rem;
   list-style: none;
   position: absolute;
   width: 6.1rem;
