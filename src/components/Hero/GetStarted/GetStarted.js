@@ -1,9 +1,9 @@
 import React from 'react';
 import Button from '../Button/Button.js';
+import AlertBox from '../Alert/Alert.js';
 import Header from '../Header/Header.js';
 import Paragraph from '../Paragraph/Paragraph.js';
 import Buy from '../Buy/Buy.js';
-
 import './GetStarted.css';
 
 const GetStarted = (props) => (
@@ -12,6 +12,7 @@ const GetStarted = (props) => (
       <div className='row'>
         <div className='col-sm-6'>
           <div className='getstarted-info-container'>
+            <AlertBox />
             <Header headerText={'Buy Bitcoin with Credit Card'}/>
             <Paragraph paragraphText={
               `Catch mouse and gave it as a present chew the plant 
